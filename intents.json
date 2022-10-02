@@ -26,28 +26,43 @@
     },
     {"tag": "renterInsurance",
     "patterns":["What is renter insurance?","i want to know about renter insurance","renter insurance","renter","i am thinking aobut a renter insurance","renting insurance"],
-    "responses": ["Consider it a security blanket for your security blanket. We cover the things you own and love. From TVs and bicycles to laptops and even your favorite down comforter.\nWhat type of renter insurance would you like to know more about? Home, Car, or Identity."]
+    "responses": ["Renters insurance covers your stuff like computers, TVs, electronics, bicycles, furniture, and clothing both inside and away from your apartment, condominium, or rental home. It may also cover your stuff outside your place. Would you like to know about another type of insurance?."]
     }  ,
     {"tag": "renterCarInsurance",
      "patterns": [ "automobile","Car","car insurance","more on car insurance"],
-     "responses": ["Let me tell you a situation, Suppose you left your laptop in the backseat. No worries. Your personal property is covered for accidents in your home or apartment, and your things are also covered in a storage closet, your deck, or even your car.\n Would you like you know about another insurance?(Pet, Supplement, Hospital)"]
+     "responses": ["Let me tell you a situation, Suppose you left your laptop in the backseat. No worries. Your personal property is covered for accidents in your home or apartment, and your things are also covered in a storage closet, your deck, or even your car.\n Would you like you know about another insurance?"]
     },
     {"tag": "medicalSupplementInsurance",
-     "patterns": ["what is medical supplement health insurance?","i want to know about medical supplement insurance","medical health supplement","medical","i am thinking aobut a medical supplement insurance","medical insurance","health","health insurance"],
+     "patterns": ["medical supplement","i want to know about medical supplement","medical supplement","medical","i am thinking aobut a medical supplement","medical insurance","health","health insurance"],
      "responses": ["A Supplemental health insurance is additional insurance you can purchase to help individuals and families deal with additional medical care and the extra costs associated with hospital stays. Anything other questions?"]
     },
     {"tag": "HospitalIncomeInsurance",  
-     "patterns": ["what is Hospital income insurance?","i want to know about Hospital income insurance","Hospital income","medical","i am thinking aobut a Hospital insurance","Hospital insurance","income insurance","Hospital","income"],
-     "responses": ["A Supplemental health insurance1 is additional insurance you can purchase to help individuals and families deal with additional medical care and the extra costs associated with hospital stays. Anything other questions?"]
+     "patterns": ["Hospital","what is Hospital income?","i want to know about Hospital income insurance","Hospital income","i am thinking aobut a Hospital insurance","Hospital insurance","income insurance","Hospital","income"],
+     "responses": ["Hospital Income Insurance is currently available through State Farm Mutual Automobile Insurance Company. Please read a brief description of the State Farm Hospital Income Insurance Policy available in Texas. Anything other questions?"]
     },
     {"tag": "PetInsurance",  
      "patterns": ["pet","dog","cat"],
-     "responses": ["When accidents or ill health happen, many dog owners find themselves facing tough decisions about their canine's care, whether it's a puppy or a senior dog. We can help. State Farm® agents work with Trupanion – a leader in high-quality pet medical insurance plans – to make it easier for dog owners to care for those who care so deeply for them. Anything other questions?"]
+     "responses": ["When accidents or ill health happen, many pet owners find themselves facing tough decisions about their pet's care, whether it's a puppy or a senior dog. We can help. State Farm agents work with Trupanion  a leader in high-quality pet medical insurance plans  to make it easier for pet owners to care for those who care so deeply for them. Anything other questions?"]
     },
     {"tag": "Yes",  
-    "patterns": ["Yes"],
+    "patterns": ["Yes","yep","yeah","yea", "more"],
     "responses": ["Renters Insurance, Medical Supplement Insurance, Pet Insurance, or Hospital Insurance?"]
-   }
+    }
+    ,
+    {"tag": "No",  
+    "patterns": ["No","that is it","quit","that is all"],
+    "responses": ["Thank you have a nice day!(Say \"quit\" to exit)"]
+    }
+    ,
+    {"tag": "Ok",  
+    "patterns": ["Fine","ok"],
+    "responses": ["Anything else?"]
+    },
+    {"tag": "Ok",  
+    "patterns": ["confused", "I am confused"],
+    "responses": ["More more information, go here: https://www.statefarm.com/insurance"]
+    }
+
     
 
 

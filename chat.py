@@ -21,13 +21,16 @@ all_words = data['all_words']
 tags = data['tags']
 model_state = data["model_state"]
 
+quiting =0
+
+
 model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
 bot_name = "Jake"
 print("Hey it's Jake from StateFarm!")
-print("Which Insurance would you like to learn about? (Renter, Hospital Income, Medical Supplement Income, Pet")
+print("Which Insurance would you like to learn about? (Renter, Hospital Income, Medical Supplement Income, Pet)")
 while True:
     # sentence = "do you use credit cards?"
     sentence = input("You: ")
@@ -46,9 +49,13 @@ while True:
 
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
-    if prob.item() > 0.75:
+    if prob.item() > 0.75: #0.75
         for intent in intents['intents']:
             if tag == intent["tag"]:
                 print(f"{bot_name}: {random.choice(intent['responses'])}")
     else:
         print(f"{bot_name}: Sorry I do not understand can you say it another way")
+
+    
+
+    
