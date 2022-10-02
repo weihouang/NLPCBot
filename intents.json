@@ -1,0 +1,57 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+     "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
+     "context_set": ""
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye"],
+     "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {"tag": "hours",
+     "patterns": ["What hours are you open?", "What are your hours?", "When are you open?" ],
+     "responses": ["We're open every day 9am-9pm", "Our hours are 9am-9pm every day"]
+    },
+    {"tag": "payments",
+     "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?" ],
+     "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards"]
+    },
+    {"tag": "opentoday",
+     "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
+     "responses": ["We're open every day from 9am-9pm", "Our hours are 9am-9pm every day"]
+    },
+    {"tag": "renterInsurance",
+    "patterns":["What is renter insurance?","i want to know about renter insurance","renter insurance","renter","i am thinking aobut a renter insurance","renting insurance"],
+    "responses": ["Consider it a security blanket for your security blanket. We cover the things you own and love. From TVs and bicycles to laptops and even your favorite down comforter.\nWhat type of renter insurance would you like to know more about? Home, Car, or Identity."]
+    }  ,
+    {"tag": "renterCarInsurance",
+     "patterns": [ "automobile","Car","car insurance","more on car insurance"],
+     "responses": ["Let me tell you a situation, Suppose you left your laptop in the backseat. No worries. Your personal property is covered for accidents in your home or apartment, and your things are also covered in a storage closet, your deck, or even your car.\n Would you like you know about another insurance?(Pet, Supplement, Hospital)"]
+    },
+    {"tag": "medicalSupplementInsurance",
+     "patterns": ["what is medical supplement health insurance?","i want to know about medical supplement insurance","medical health supplement","medical","i am thinking aobut a medical supplement insurance","medical insurance","health","health insurance"],
+     "responses": ["A Supplemental health insurance is additional insurance you can purchase to help individuals and families deal with additional medical care and the extra costs associated with hospital stays. Anything other questions?"]
+    },
+    {"tag": "HospitalIncomeInsurance",  
+     "patterns": ["what is Hospital income insurance?","i want to know about Hospital income insurance","Hospital income","medical","i am thinking aobut a Hospital insurance","Hospital insurance","income insurance","Hospital","income"],
+     "responses": ["A Supplemental health insurance1 is additional insurance you can purchase to help individuals and families deal with additional medical care and the extra costs associated with hospital stays. Anything other questions?"]
+    },
+    {"tag": "PetInsurance",  
+     "patterns": ["pet","dog","cat"],
+     "responses": ["When accidents or ill health happen, many dog owners find themselves facing tough decisions about their canine's care, whether it's a puppy or a senior dog. We can help. State Farm® agents work with Trupanion – a leader in high-quality pet medical insurance plans – to make it easier for dog owners to care for those who care so deeply for them. Anything other questions?"]
+    },
+    {"tag": "Yes",  
+    "patterns": ["Yes"],
+    "responses": ["Renters Insurance, Medical Supplement Insurance, Pet Insurance, or Hospital Insurance?"]
+   }
+    
+
+
+    ]
+    }
+
+
